@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+#dark-toggle {
+  margin-left: 15px;
+  padding: 6px 10px;
+  border: none;
+  background: #444;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#dark-toggle:hover {
+  background: #222;
+}
+
+/* Scrolling Ticker */
+.ticker {
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker ul {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 15s linear infinite;
+}
+
+.ticker li {
+  display: inline;
+  margin: 0 50px;
+  font-weight: bold;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Search Box */
+.search-box {
+  text-align: center;
+  margin: 15px;
+}
+.search-box input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.search-box button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-box button:hover {
+  background: #0056b3;
+}
+
+/* Dashboard */
+#stock-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.stock-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.up { color: green; }
+.down { color: red; }
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+.dark-mode header {
+  background: #000;
+}
+.dark-mode .stock-card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #stock-dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stock-card {
+    width: 90%;
+  }
+  .search-box input {
+    width: 60%;
+  }
+}
+
+/* Loader */
+.loader-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+}
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.remove-stock {
+  cursor: pointer;
+  color: red;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.updated-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+.dark-mode .updated-text {
+  color: #aaa;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Stock Ticker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📈 Real-Time Stock Ticker</h1>
+    <button id="dark-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <!-- Scrolling Ticker -->
+  <div class="ticker">
+    <ul id="ticker-list"></ul>
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-box">
+    <input type="text" id="stock-input" placeholder="Enter Stock Symbol (e.g., AAPL)">
+    <button onclick="addStock()">Add</button>
+  </div>
+
+  <!-- Loader -->
+  <div id="loader" class="loader-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Stock Dashboard -->
+  <section id="stock-dashboard"></section>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
