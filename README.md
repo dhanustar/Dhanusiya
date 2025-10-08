@@ -1,13 +1,13 @@
                                                                                Project Description
 
                       The Real-Time Stock Ticker is a web-based application that provides live updates of stock prices with an interactive and user-friendly interface.
-											It integrates stock market APIs to fetch the latest stock values and displays them dynamically without manual refresh.
-											The system features a scrolling ticker, dark/light mode switch, and search functionality to add specific stocks. 
-											Each stock is displayed as a card with price, percentage change, mini chart, and last updated time.
+					  It integrates stock market APIs to fetch the latest stock values and displays them dynamically without manual refresh.
+					  The system features a scrolling ticker, dark/light mode switch, and search functionality to add specific stocks. 
+					  Each stock is displayed as a card with price, percentage change, mini chart, and last updated time.
                       The project demonstrates the integration of HTML, CSS, JavaScript, and APIs to build a responsive dashboard that works across devices. 
-											It can be extended with features like historical trend graphs, notifications, and portfolio management.
+					  It can be extended with features like historical trend graphs, notifications, and portfolio management.
 											
-																																								 🚀 Features  
+																				 🚀 Features  
 																																								 
                       - 🔄 Live Stock Updates – Auto-refreshing stock prices in real time.  
                       - 📰 Scrolling Ticker Bar – Horizontal stock price feed like financial news channels.  
@@ -55,28 +55,29 @@
                       ->Loader Animation while fetching data for better engagement.
 
                       ->Mini Stock Graphs inside each card for quick trend view.
+					  
                                                                           🛠️ Tech Stack  
 																																					
-                                                          - HTML – Structure  
-                                                          - CSS– Styling (light/dark mode, ticker animation, responsiveness)  
-                                                          - JavaScript (JS) – Dynamic updates, API handling, search, and UI logic  
-                                                          - Stock Market APIs – For fetching real-time stock data  
+                      - HTML – Structure  
+                      - CSS– Styling (light/dark mode, ticker animation, responsiveness)  
+                      - JavaScript (JS) – Dynamic updates, API handling, search, and UI logic  
+                      - Stock Market APIs – For fetching real-time stock data  
 																													
-																												              	🔮 Future Enhancements  
+																	  	🔮 Future Enhancements  
 																																				
-                                                          - 📈 Historical stock trend graphs.  
-                                                          - 🔔 Price alerts & notifications.  
-                                                          - 💼 Portfolio management.  
-                                                          - 🤖 AI-powered stock predictions.  
-                                                          - ☁️ Cloud storage for user watchlists
+                     - 📈 Historical stock trend graphs.  
+                     - 🔔 Price alerts & notifications.  
+                     - 💼 Portfolio management.  
+                     - 🤖 AI-powered stock predictions.  
+                     - ☁️ Cloud storage for user watchlists
 																													
-                                                                               Output Contents
+                                                                         Output Contents
 
                                                   When the project runs successfully, the following outputs are displayed:
 
                                                  1. Header & Title: Displays “Real-Time Stock Ticker” with dark mode option.
                                                  2. Scrolling Ticker: Shows live stock prices moving horizontally across the top bar.
-																							   3. Search Functionality: Allows entry of a stock symbol (e.g., AAPL, GOOGL) to add it to the dashboard.
+											     3. Search Functionality: Allows entry of a stock symbol (e.g., AAPL, GOOGL) to add it to the dashboard.
                                                  4. Stock Cards:
                                                   Company symbol (e.g., AAPL, GOOGL, TSLA).
                                                  5. Current price in USD.
@@ -85,5 +86,5 @@
                                                  8. Last updated timestamp.
                                                  9. Remove button (❌) to delete a stock from the dashboard.
                                                 10. Dark/Light Mode Switching: Instantly switches styles between light and dark themes.
-																								11.	Responsive Layout: On small screens, cards rearrange vertically for mobile viewing.
+												11.	Responsive Layout: On small screens, cards rearrange vertically for mobile viewing.
 
